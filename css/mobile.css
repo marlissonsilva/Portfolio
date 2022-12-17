@@ -73,7 +73,16 @@
 
     }
 
-
+    /* About */
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 2rem;
+    }
 
 }
 

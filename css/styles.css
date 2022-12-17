@@ -20,6 +20,7 @@ li {
     --color-diferent-banner: black;
     --bg-section-main: #ffffff;
     --color-title: white;
+    --color-paragraph: #c6c6ca;
     --color-secundary-title: black;
 }
 
@@ -329,4 +330,75 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+
+/* ############# MAIN ############### */
+main {
+    height: 100vh;
+    background-color: var(--bg-secundary);
+    padding-top: 1rem;
+}
+
+/* ########## ABOUT ########## */
+#about {
+    background-color:var(--bg-main);
+    padding-bottom: 2rem;
+    width: 96%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.container img {
+    opacity: .7;
+    transition: .3s;
+    border-radius: 1rem;
+}
+
+.container img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.container p {
+    color: var(--color-paragraph);
+}
+
+/*########### SKILLS ############# */
+#skills {
+    grid-area: skills;
+    padding: 1rem;
+}
+
+.skills-container-image {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    /* padding: .5rem; */
+    flex-wrap: wrap;
+}
+
+.skills-container-image>div {
+    background-color: var(--bg-secundary);
+    padding: .5rem;
+    width: 100px;
+}
+
+.skills-container-image img {
+    width: 100%;
+}
+
+.title-tech {
+    text-align: center;
+    color: var(--color-secundary-title);
+    margin-bottom: .5rem;
+    font-family: Lato, sans-serif;
 }

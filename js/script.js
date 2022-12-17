@@ -39,6 +39,29 @@ function scrollClick(event) {
 }
 
 
+// Animation scrool page itens
+
+const root = document.documentElement;
+root.className += "js";
+function animeScroll() {
+    const target = document.querySelectorAll(".anime");
+    target.forEach((element) => {
+        let contentPosition = element.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight * 0.65;
+        if (contentPosition < screenPosition) {
+            element.classList.add("animate");
+        } else {
+            element.classList.remove("animate");
+        }
+    });
+}
+
+animeScroll();
+
+window.addEventListener("scroll", function () {
+    animeScroll();
+});
+
 
 
 
