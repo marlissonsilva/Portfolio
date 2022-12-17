@@ -1,0 +1,332 @@
+/*#########  GERAIS  #########*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --bg-main: rgb(0, 0, 0);
+    --bg-secundary: #c6c6ca;
+    --color-text-banner: white;
+    --color-diferent-banner: black;
+    --bg-section-main: #ffffff;
+    --color-title: white;
+    --color-secundary-title: black;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.title-section {
+    font-size: 3rem;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--color-title);
+}
+
+.subtitle-section {
+    color: var(--color-title);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+/*###########  HEADER ##########*/
+
+#header {
+    height: 100vh;
+    max-height: 800px;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Lato";
+    position: relative;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--bg-secundary);
+}
+
+.nav-left {
+    background-color: var(--bg-main);
+    width: 50%;
+    height: 3rem;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    /* animation: fade-bg-left .9s ease-in-out; */
+
+}
+
+.brand {
+    font-size: 2rem;
+    color: var(--bg-secundary);
+    padding-left: 1rem;
+    animation: fade-text .9s;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-weight: 600;
+    align-items: center;
+    padding-right: 1rem;
+    z-index: 10;
+    animation: fade-text .9s;
+}
+
+.menu a {
+    color: var(--bg-main);
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .5rem;
+    transition: .5s ease-out;
+}
+
+.menu a:hover {
+    color: var(--bg-secundary);
+    background-color: var(--bg-main);
+}
+
+.menu-mobile, .closed-menu {
+    display: none;
+}
+
+/* ######## BANNER #######  */
+#banner {
+    height: 100vh;
+    max-height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bi {
+    margin-right: .5rem;
+}
+
+.banner-left {
+    z-index: 1;
+    animation: fade-bg-left .9s ease-in-out;
+    background-color: var(--bg-main);
+}
+
+.banner-text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade-text 1.4s;
+    color: var(--bg-secundary);
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 693px;
+    /* background-color: red; */
+}
+
+.banner-text-content h1 {
+    font-size: 6rem;
+    color: var(--bg-secundary);
+    margin-left: 13px;
+}
+
+.banner-text-content p {
+    line-height: 3rem;
+    margin-left: 10px;
+}
+
+.different-color {
+    color: var(--bg-main);
+}
+
+.banner-right {
+    background-color: var(--bg-secundary);
+    animation: fade-bg-right .9s;
+}
+
+.banner-left, .banner-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.container-buttons button {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    color: var(--bg-main);
+    border: 1px solid var(--bg-main);
+    font-size: 1.1rem;
+    cursor: pointer;
+    /* transition: all .5s; */
+    /* background: linear-gradient(to left, rgb(241, 240, 240) 50%, rgb(6, 6, 6) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out; */
+}
+
+.container-buttons button:hover {
+    background-color: var(--bg-main);
+    color: white;
+    transition: all .5s ease;
+    transition: .5s ease-out;
+    /* background-position: left; */
+}
+
+
+/* ######## ANIMAÇÔES DO HEADER E BANNER######### */
+@keyframes fade-bg-left {
+    0% {
+        background-color: var(--bg-secundary);
+        margin-left: 100%;
+    }
+
+    100% {
+        background-color: var(--bg-main);
+        margin-right: 0;
+    }
+}
+
+@keyframes fade-bg-right {
+    0% {
+        background-color: var(--bg-main);
+        margin-right: 100%;
+    }
+
+    100% {
+        background-color: var(--bg-secundary);
+        margin-left: 0;
+    }
+}
+
+@keyframes fade-text {
+    0% {
+        opacity: 0;
+        transform: scale(.5);
+        margin-left: -20%;
+        margin-top: -10%;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*############ ANIMAÇÕES  DE ELEMENTOS DO MAIN */
+.js .anime {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.js .anime.animate {
+    opacity: 1;
+}
+
+.animate.fade-in {
+    animation: fade-in 1s ease-in-out both;
+}
+
+.animate.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.animate.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+}
+
+.animate.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+}
+
+.animate.scale {
+    animation: fade-scale 1s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes slide-in-left {
+    0% {
+        /* -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);*/
+        opacity: 0;
+        transform: translate3d(-50px, 0px, 0px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-scale {
+    0% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
