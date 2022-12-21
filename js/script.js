@@ -38,7 +38,6 @@ function scrollClick(event) {
     })
 }
 
-
 // Animation scrool page itens
 
 const root = document.documentElement;
@@ -61,9 +60,5 @@ animeScroll();
 window.addEventListener("scroll", function () {
     animeScroll();
 });
-
-
-
-
 
 

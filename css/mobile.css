@@ -84,6 +84,38 @@
         gap: 2rem;
     }
 
+
+
+    #modal{
+        width: 90%;
+        height: auto;
+        max-width: 700px;
+    }
+
+    .modal-body{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .img-container img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .info-card{
+        padding: 2rem;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #title{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
 }
 
 
@@ -95,7 +127,7 @@
     }
 
     .banner-text-content h1, .banner-text-content p {
-        margin-left: 0px;
+        margin-left: 15px;
     }
 
     .banner-text-content h1 {
@@ -103,6 +135,8 @@
         color: var(--bg-secundary);
     }
 
+
+   
 }
 
 /* ############################################## */
@@ -159,6 +193,13 @@
         background-color: var(--bg-secundary);
         color: var(--bg-main);
     }
+
+
+     /* PROJECTS */
+     .container-cards {
+        grid-template-columns: repeat(1, minmax(12rem, 1fr));
+    }
+
 }
 
 

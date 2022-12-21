@@ -26,6 +26,7 @@ li {
 
 body {
     font-family: 'Lato';
+    background-color: var(--bg-secundary);
 }
 
 .title-section {
@@ -191,7 +192,6 @@ body {
 .container-buttons button:hover {
     background-color: var(--bg-main);
     color: white;
-    transition: all .5s ease;
     transition: .5s ease-out;
     /* background-position: left; */
 }
@@ -250,7 +250,7 @@ body {
 }
 
 .animate.fade-in {
-    animation: fade-in 1s ease-in-out both;
+    animation: fade-in .5s ease-in-out both;
 }
 
 .animate.fade-in-bottom {
@@ -335,16 +335,15 @@ body {
 
 /* ############# MAIN ############### */
 main {
-    height: 100vh;
     background-color: var(--bg-secundary);
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 /* ########## ABOUT ########## */
 #about {
-    background-color:var(--bg-main);
+    background-color: var(--bg-main);
     padding-bottom: 2rem;
-    width: 96%;
+    width: 100%;
     margin: auto;
 }
 
@@ -401,4 +400,163 @@ main {
     color: var(--color-secundary-title);
     margin-bottom: .5rem;
     font-family: Lato, sans-serif;
+}
+
+/*########## PROJECTS ############# */
+
+#projects .title-section {
+    color: var(--bg-main);
+}
+
+#projects {
+    /* position: relative; */
+    background-color: white;
+    padding-bottom: 3rem;
+}
+
+.container-cards {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    min-height: 15rem;
+    cursor: pointer;
+    background-color: rgb(4, 4, 4);
+    border-radius: .8rem;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    opacity: .3                             ;
+    border-radius: .8rem;
+}
+
+.card img:hover{
+    transition: .5s ease;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* ####### MODAL ############# */
+#fade {
+    height: 100%;
+    width: 100%;
+    background-color: #666666;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modal {
+    background-color: #FFFFFF;
+    /* height: 70%; */
+    width: 800px;
+    max-width: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    /* display: none; */
+    z-index: 10;
+
+}
+
+#fade, #modal {
+    opacity: 1;
+    transition: .5s;
+    pointer-events: all;
+}
+
+
+#modal.active{
+    top: 0;
+}
+
+#fade.active, #modal.active {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.close-button {
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    background-color: transparent;
+    color: var(--bg-main);
+    border: 1px solid var(--bg-main);
+    transition: .5s ease-out;
+    text-align: center;
+
+}
+
+.close-button i {
+    margin-left: .5rem;
+}
+
+.modal-body {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+}
+
+.img-container {
+    height: 100%;
+    max-width: 400px;
+}
+
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+
+    /* max-width: 50%; */
+}
+
+.info-card>.container-buttons {
+    justify-content: flex-start;
+}
+
+.info-card>.container-buttons button {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    color: var(--bg-main);
+}
+
+.info-card>.container-buttons button:hover, .close-button:hover {
+    background-color: var(--bg-main);
+    color: var(--color-title);
+}
+
+.info-card {
+    padding: 2rem;
+    width: 100%;
+    max-width: 50%;
+}
+
+#title {
+    font-size: 2rem;
+    padding: 2rem 0;
 }
