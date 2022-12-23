@@ -6,7 +6,7 @@ const dataModal = [
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia'
+        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
     },
     {
 
@@ -15,7 +15,7 @@ const dataModal = [
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia'
+        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
     },
     {
 
@@ -24,7 +24,7 @@ const dataModal = [
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia'
+        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
 
     },
     {
@@ -34,7 +34,7 @@ const dataModal = [
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia'
+        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
     },
     {
 
@@ -43,7 +43,7 @@ const dataModal = [
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia'
+        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
     },
     {
 
@@ -52,7 +52,7 @@ const dataModal = [
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia'
+        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
     },
     {
 
@@ -61,18 +61,28 @@ const dataModal = [
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia'
+        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
 
     },
-    {
+//     {
 
-        title: 'Card Order Sumary 8',
-        img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-05%20072353.png?raw=true',
-        desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
-        techs: 'html, css, js',
-        projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia'
-    }
+//         title: 'Card Order Sumary 8',
+//         img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-05%20072353.png?raw=true',
+//         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
+//         techs: 'html, css, js',
+//         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
+//         repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+//     }
+//     ,
+//     {
+
+//         title: 'Card Order Sumary 9',
+//         img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-01%20080231.png?raw=true',
+//         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
+//         techs: 'html, css, js',
+//         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
+//         repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+//     }
 ]
 
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <title>Portfolio</title>
 
     <!-- fonts -->
@@ -16,60 +16,50 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="./css/mobile-first.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/mobile.css">
 </head>
 
 <body>
     <header id="header">
         <nav id="nav">
-            <div class="nav-left">
-                <a href="#header" class="brand">MS</a>
-            </div>
+            <a href="#header" class="brand">MS</a>
             <div class="menu-mobile">
                 <div class="one"></div>
                 <div class="two"></div>
                 <div class="three"></div>
             </div>
 
-            <ul class="menu nav-right">
+            <ul class="menu">
                 <li><a href="#header">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#projects">Projetos</a></li>
-                <li><a href="#footer">Contato</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
-
-
         </nav>
-        <!--  ######## BANNER ########  -->
         <div id="banner">
-            <div class="banner-left">
-                <div class="banner-text-content">
-                    <p>Bem vindo(a) ao meu Portfolio</p>
-                    <p>Me chamo</p>
-                    <h1>Marliss<span class="different-color">on Silva</span></h1>
-                    <div class="container-buttons">
-                        <a href="https://www.linkedin.com/in/marlysson-silva-8b85b821a/" target="_blank"> <button
-                                class="btn"><i class="bi bi-linkedin"></i>Linkedin</button></a>
-                        <a href="https://github.com/marlissonsilva" target="_blank"> <button class="btn"><i
-                                    class="bi bi-github"></i>GitHub</button></a>
-                    </div>
+            <div class="banner-text-content">
+                <p>Bem vindo(a) ao meu Portfolio</p>
+                <p>Me chamo</p>
+                <h1>Marlisson Silva</h1>
+                <div class="container-buttons">
+                    <a href="https://www.linkedin.com/in/marlysson-silva-8b85b821a/" target="_blank"> <button
+                            class="btn"><i class="bi bi-linkedin"></i>Linkedin</button></a>
+                    <a href="https://github.com/marlissonsilva" target="_blank"> <button class="btn"><i
+                                class="bi bi-github"></i>GitHub</button></a>
                 </div>
-            </div>
-            <div class="banner-right">
-
             </div>
         </div>
     </header>
-
-    <main>
+    <main id="main">
         <section id="about">
             <h1 class="title-section anime slide-left">Sobre</h1>
             <div class="container">
-                <div class="anime scale">
+                <div class="anime slide-left">
                     <img src="./images/foto.jpg" alt="">
                 </div>
-                <div class="anime scale">
+                <div class="anime  slide-left">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum totam fuga soluta asperiores
                         maxime,
                         quae veritatis doloremque voluptatum aspernatur consequuntur quas cumque laborum nesciunt.
@@ -80,7 +70,7 @@
                         deserunt ipsum maiores nisi atque.</p>
                 </div>
             </div>
-            <div id="skills" class="anime slide-left ">
+            <div id="skills" class="anime fade-in-bottom ">
                 <h3 class="subtitle-section">Habilidades</h3>
                 <div class="skills-container-image">
                     <div>
@@ -106,46 +96,35 @@
                 </div>
             </div>
         </section>
-
-        <!-- PROJECTS -->
-
         <section id="projects">
             <h1 class="title-section anime slide-left">Projetos</h1>
+            <p class="auxiliary-text anime fade-in-bottom">Abaixo alguns projetos desenvolvidos, clique no card para ver
+                mais! </p>
             <div class="container-cards">
-                <div class="card" data-index="1">
+                <div class="card anime fade-in" data-index="0">
+                    <img src="./images/Captura de tela 2022-12-01 080449.png" alt="">
+                </div>
+                <div class="card anime fade-in" data-index="1">
                     <img src="./images/Captura de tela 2022-12-01 080231.png" alt="">
                 </div>
 
-                <div class="card" data-index="2">
+                <div class="card anime fade-in" data-index="2">
                     <img src="./images/Captura de tela 2022-12-05 083649.png" alt="">
                 </div>
 
-                <div class="card" data-index="3">
+                <div class="card anime fade-in" data-index="3">
                     <img src="./images/Captura de tela 2022-12-01 080449.png" alt="">
                 </div>
 
-                <div class="card" data-index="4">
+                <div class="card anime fade-in" data-index="4">
                     <img src="./images/Captura de tela 2022-12-05 072353.png" alt="">
                 </div>
 
-                <div class="card" data-index="5">
-                    <img src="./images/Captura de tela 2022-12-01 081722.png" alt="">
+                <div class="card anime fade-in" data-index="5">
+                    <img src="https://img.freepik.com/fotos-gratis/professor-sorridente-segurando-um-monte-de-livros-e-uma-maca-com--de-copia_23-2148668527.jpg?w=900&t=st=1667474703~exp=1667475303~hmac=dfd5883afc5725211ff76b5edfb96f52dfda9442486ef2ea8858b12def7560d6"
+                        alt="">
                 </div>
 
-                <div class="card" data-index="6">
-                    <img src="./images/Captura de tela 2022-12-05 083649.png" alt="">
-                </div>
-                <div class="card" data-index="7">
-                    <img src="./images/Captura de tela 2022-12-01 080231.png" alt="">
-                </div>
-
-                <div class="card" data-index="8">
-                    <img src="./images/Captura de tela 2022-12-05 083649.png" alt="">
-                </div>
-
-                <div class="card" data-index="9">
-                    <img src="./images/Captura de tela 2022-12-01 080449.png" alt="">
-                </div>
 
             </div>
 
@@ -170,17 +149,21 @@
                                         projeto</button></a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-            <!-- ##################### -->
         </section>
-
-
     </main>
-    <br> <br><br><br><br><br><br><br><br><br><br>
+    <footer id="contact">
+        <div class="container-contact">
+            <a href="" class="phone"> <i class="bi bi-telephone-fill "></i></a>
+            <a href="" class="github"><i class="bi bi-github "></i></a>
+            <a href="" class="linkedin"> <i class="bi bi-linkedin "></i></a>
+        </div>
+        <p class="copy">&copy; Todos os direitos reservados</p>
+    </footer>
+
     <script src="./js/script.js"></script>
     <script src="./js/modal.js"></script>
 </body>
