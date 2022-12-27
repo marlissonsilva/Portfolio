@@ -1,8 +1,8 @@
 const dataModal = [
     {
 
-        title: 'Order Sumary 1',
-        img: 'https://img.freepik.com/fotos-gratis/professor-sorridente-segurando-um-monte-de-livros-e-uma-maca-com--de-copia_23-2148668527.jpg?w=900&t=st=1667474703~exp=1667475303~hmac=dfd5883afc5725211ff76b5edfb96f52dfda9442486ef2ea8858b12def7560d6',
+        title: 'hora do dia',
+        img: 'https://github.com/marlissonsilva/images/blob/main/hora-do-dia.png?raw=true',
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
@@ -10,79 +10,79 @@ const dataModal = [
     },
     {
 
-        title: 'Cards car 2',
-        img: 'https://img.freepik.com/fotos-gratis/garoto-segurando-uma-maca-na-sala-de-aula_1150-3835.jpg?t=st=1667445614~exp=1667446214~hmac=17db5282ab1d79711c47712814099358a038eca632c9167864ebadfbbed286c2',
+        title: 'arte e sorriso',
+        img: 'https://github.com/marlissonsilva/images/blob/main/arte-sorriso.png?raw=true',
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
-        projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+        projeto: 'https://marlissonsilva.github.io/arte-sorriso/',
+        repositorio: 'https://github.com/marlissonsilva/arte-sorriso',
     },
     {
 
-        title: 'cards car preview 3',
-        img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-01%20080231.png?raw=true',
+        title: 'Collor Flipper',
+        img: 'https://github.com/marlissonsilva/images/blob/main/collor-flipper.png?raw=true',
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
-        projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+        projeto: 'https://marlissonsilva.github.io/Collor-Flipper/hex.html',
+        repositorio: 'https://github.com/marlissonsilva/Collor-Flipper',
 
     },
     {
 
-        title: 'Card Order Sumary 4',
-        img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-05%20072353.png?raw=true',
+        title: 'Order summary card',
+        img: 'https://github.com/marlissonsilva/images/blob/main/oder-summary-card.png?raw=true',
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
-        projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+        projeto: 'https://marlissonsilva.github.io/order-summary-component/',
+        repositorio: 'https://github.com/marlissonsilva/order-summary-component',
     },
     {
 
-        title: 'Order Sumary 5',
-        img: 'https://img.freepik.com/fotos-gratis/professor-sorridente-segurando-um-monte-de-livros-e-uma-maca-com--de-copia_23-2148668527.jpg?w=900&t=st=1667474703~exp=1667475303~hmac=dfd5883afc5725211ff76b5edfb96f52dfda9442486ef2ea8858b12def7560d6',
+        title: 'column preview card component',
+        img: 'https://github.com/marlissonsilva/images/blob/main/column-preview-card.png?raw=true',
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
-        projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+        projeto: 'https://marlissonsilva.github.io/3column-preview-card-component-main/',
+        repositorio: 'https://github.com/marlissonsilva/3column-preview-card-component-main',
     },
     {
 
-        title: 'Cards car 6',
-        img: 'https://img.freepik.com/fotos-gratis/garoto-segurando-uma-maca-na-sala-de-aula_1150-3835.jpg?t=st=1667445614~exp=1667446214~hmac=17db5282ab1d79711c47712814099358a038eca632c9167864ebadfbbed286c2',
+        title: 'IMC',
+        img: 'https://github.com/marlissonsilva/images/blob/main/imc.png?raw=true',
         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
         techs: 'html, css, js',
-        projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
-    },
-    {
+        projeto: 'https://marlissonsilva.github.io/imc/',
+        repositorio: 'https://github.com/marlissonsilva/imc',
+    }
+    // {
 
-        title: 'cards car preview 7',
-        img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-01%20080231.png?raw=true',
-        desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
-        techs: 'html, css, js',
-        projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-        repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+    //     title: 'cards car preview 7',
+    //     img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-01%20080231.png?raw=true',
+    //     desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
+    //     techs: 'html, css, js',
+    //     projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
+    //     repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
 
-    },
-//     {
+    // },
+    //     {
 
-//         title: 'Card Order Sumary 8',
-//         img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-05%20072353.png?raw=true',
-//         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
-//         techs: 'html, css, js',
-//         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-//         repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
-//     }
-//     ,
-//     {
+    //         title: 'Card Order Sumary 8',
+    //         img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-05%20072353.png?raw=true',
+    //         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
+    //         techs: 'html, css, js',
+    //         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
+    //         repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+    //     }
+    //     ,
+    //     {
 
-//         title: 'Card Order Sumary 9',
-//         img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-01%20080231.png?raw=true',
-//         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
-//         techs: 'html, css, js',
-//         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
-//         repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
-//     }
+    //         title: 'Card Order Sumary 9',
+    //         img: 'https://github.com/marlissonsilva/portfolio/blob/main/images/Captura%20de%20tela%202022-12-01%20080231.png?raw=true',
+    //         desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
+    //         techs: 'html, css, js',
+    //         projeto: 'https://marlissonsilva.github.io/hora-do-dia/',
+    //         repositorio: 'https://github.com/marlissonsilva/hora-do-dia',
+    //     }
 ]
 
 

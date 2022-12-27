@@ -336,7 +336,8 @@ button:hover {
 #fade {
     height: 100%;
     width: 100%;
-    background-color: #666666;
+    /* background-color: #666666; */
+    backdrop-filter: blur(60px);
     z-index: 5;
     position: fixed;
     top: 0;
