@@ -19,10 +19,13 @@
     <link rel="stylesheet" href="./css/mobile-first.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Scripts -->
+    <script src="./js/script.js" defer></script>
+    <script src="./js/modal.js" defer></script>
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="section">
         <nav id="nav">
             <a href="#header" class="brand">MS</a>
             <div class="menu-mobile">
@@ -32,10 +35,10 @@
             </div>
 
             <ul class="menu">
-                <li><a href="#header">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
+                <li><a href="#header" class="active-link-menu">Início</a></li>
+                <li><a href="#about ">Sobre</a></li>
                 <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <!-- <li><a href="#contact">Contato</a></li> -->
             </ul>
         </nav>
         <div id="banner">
@@ -53,12 +56,9 @@
         </div>
     </header>
     <main id="main">
-        <section id="about">
+        <section id="about" class="section">
             <h1 class="title-section anime slide-left">Sobre</h1>
             <div class="container">
-                <div class="anime slide-left">
-                    <img src="./images/foto.jpg" alt="">
-                </div>
                 <div class="anime  slide-left">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum totam fuga soluta asperiores
                         maxime,
@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="section">
             <h1 class="title-section anime slide-left">Projetos</h1>
             <p class="auxiliary-text anime fade-in-bottom">Abaixo alguns projetos desenvolvidos, clique no card para ver
                 mais! </p>
@@ -104,29 +104,48 @@
                 <div class="card anime fade-in" data-index="0">
                     <img src="https://github.com/marlissonsilva/images/blob/main/hora-do-dia.png?raw=true"
                         alt="projeto hora do dia">
+                    <div class="without-js">
+                        <a href="">Ver projeto</a>
+                    </div>
                 </div>
                 <div class="card anime fade-in" data-index="1">
                     <img src="https://github.com/marlissonsilva/images/blob/main/arte-sorriso.png?raw=true"
                         alt="projeto arte e sorriso">
+                    <div class="without-js">
+                        <a href="">Ver projeto</a>
+                    </div>
                 </div>
 
                 <div class="card anime fade-in" data-index="2">
                     <img src="https://github.com/marlissonsilva/images/blob/main/collor-flipper.png?raw=true"
                         alt="projeto collor flipper">
+                    <div class="without-js">
+                        <a href="">Ver projeto</a>
+                    </div>
                 </div>
 
                 <div class="card anime fade-in" data-index="3">
-                    <img src="https://github.com/marlissonsilva/images/blob/main/oder-summary-card.png?raw=true" alt="projeto 
+                    <img src="https://github.com/marlissonsilva/sunnyside-agency-landing-page-main/blob/main/images/my-solution.png?raw=true"
+                        alt="projeto 
                     cartão de resumo do pedido">
+                    <div class="without-js">
+                        <a href="">Ver projeto</a>
+                    </div>
                 </div>
 
                 <div class="card anime fade-in" data-index="4">
-                    <img src="https://github.com/marlissonsilva/images/blob/main/column-preview-card.png?raw=true"
+                    <img src="https://github.com/marlissonsilva/rest-countries-api-with-color-theme-switcher-master/blob/main/img/preview-project.png?raw=true"
                         alt="projeto cartao de visualização em colunas">
+                    <div class="without-js">
+                        <a href="">Ver projeto</a>
+                    </div>
                 </div>
 
                 <div class="card anime fade-in" data-index="5">
                     <img src="https://github.com/marlissonsilva/images/blob/main/imc.png?raw=true" alt="projeto imc">
+                    <div class="without-js">
+                        <a href="">Ver projeto</a>
+                    </div>
                 </div>
 
 
@@ -139,7 +158,7 @@
                     <button class="close-button">Fechar<i class="bi bi-x-octagon"></i></button>
                     <div class="modal-body">
                         <div class="img-container">
-                            <img src="" id="img-person" alt="">
+                            <video src="" id="img-person" alt="" autoplay loop>
                         </div>
                         <div class="info-card">
                             <h3 id="title"></h3>
@@ -160,7 +179,7 @@
 
         </section>
     </main>
-    <footer id="contact">
+    <footer id="contact" class="section">
         <div class="container-contact">
             <a href="tel:21974961878" class="phone"> <i class="bi bi-telephone-fill "></i></a>
             <a href="https://github.com/marlissonsilva" target="_blank" class="github"><i class="bi bi-github "></i></a>
@@ -170,8 +189,7 @@
         <p class="copy">&copy; Todos os direitos reservados</p>
     </footer>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>

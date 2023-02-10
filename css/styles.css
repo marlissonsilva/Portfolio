@@ -38,10 +38,10 @@
         font-size: 1.3rem;
     }
 
-    .menu a:hover {
-        color: #29272d;
-    }
-
+    /* .menu a:hover{
+      color: var(--buttons);
+    } */
+    
     /* BANNER */
     .banner-text-content {
         font-size: 1.7rem;

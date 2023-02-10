@@ -26,9 +26,8 @@
 @keyframes fade-text {
     0% {
         opacity: 0;
-        transform: scale(.5);
-        margin-left: -20%;
-        margin-top: -10%;
+        /* margin-left: -20%; */
+        margin-top: -30%;
     }
 
     50% {
