@@ -1,107 +1,80 @@
-// MENU MOBILE
+// Variaveis ####################
+const header = document.querySelector('header')
+const menuHamburguer = document.querySelector('#menu-hamburguer')
+const nav = document.querySelector('#nav')
+const menuItems = document.querySelectorAll('#menu a')
+const target = document.querySelectorAll('.anime');
+const root = document.documentElement;
+root.className += 'js'
 
-
-
-const menuMobile = document.querySelector('.menu-mobile')
-function showMenu(event) {
-    if (event.type === 'touchstart') event.preventDefault()
-    const nav = document.querySelector('#nav')
-    nav.classList.toggle('active')
-    if (nav.classList.contains('active')) {
-        document.body.style.overflow = 'hidden'
-    } else {
-        document.body.style.overflow = 'visible'
-    }
-}
-
-menuMobile.addEventListener('touchstart', showMenu)
-menuMobile.addEventListener('click', showMenu)
-
-// HIDDEN MENU
-let menuItens = document.querySelectorAll('.menu a');
-menuItens.forEach(item => {
-    item.addEventListener('click', hiddenMenu);
-    // item.addEventListener('click', scrollClick);
-    item.addEventListener('click', activeLink);
-})
-var sections = document.querySelectorAll('.section');
-var menu = document.querySelector('.menu');
-var menuItems = menu.querySelectorAll('a');
-
-window.addEventListener('scroll', function () {
-    var scrollPos = window.scrollY + menu.offsetHeight;
-    for (var i = 0; i < sections.length; i++) {
-        var section = sections[i];
-
-        if (scrollPos > section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
-            menuItems[i].classList.add('active-link-menu');
-        }
-        else {
-            menuItems[i].classList.remove('active-link-menu');
-        }
-    }
+// EVENTS ######################
+menuHamburguer.addEventListener('click', toggleMneu)
+window.addEventListener('scroll', toggleNavBg)
+window.addEventListener('scroll', animeScroll)
+menuItems.forEach(element => {
+   element.addEventListener('click', hideMenu)
+   element.addEventListener('click', scrollClick)
 });
 
-function activeLink() {
-    menuItens.forEach((item) => {
-        item.classList.remove('active-link-menu')
-        this.classList.add('active-link-menu')
-    });
+
+
+// FUNCTIONS ###################
+function toggleMneu() {
+   nav.classList.toggle('active')
+   if (nav.classList.contains('active')) {
+      menuHamburguer.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+   } else {
+      menuHamburguer.innerHTML = '<i class="fa-solid fa-bars"></i>';
+   }
 }
 
-function hiddenMenu(event) {
-    if (event.type === 'touchstart') event.preventDefault()
-    const nav = document.querySelector('#nav')
-    nav.classList.remove('active')
-    document.body.style.overflow = 'visible'
+function toggleNavBg() {
+   // posição do header em relação ao topo, retorna um valor negativo 
+   const headerPosition = Math.abs(header.getBoundingClientRect().top) + 80;
+   // usei o metodo abs transforma num ero negativo em positivo 
+   const heightWindow = window.innerHeight;
+   if (headerPosition > heightWindow) {
+      nav.style.background = '#0f0e17';
+      nav.style.transition = '.3s linear'
+   } else {
+      nav.style.background = '';
+   }
+}
+
+// animeScroll()
+function animeScroll() {
+   target.forEach((element) => {
+      let contentPosition = element.getBoundingClientRect().top;
+      let screenPosition = window.innerHeight * 0.65;
+      if (contentPosition < screenPosition) {
+         element.classList.add('animate');
+      } else {
+         element.classList.remove('animate')
+      }
+   })
+}
+
+function hideMenu(event) {
+   if (event.type === 'click') {
+      nav.classList.remove('active')
+      menuHamburguer.innerHTML = '<i class="fa-solid fa-bars"></i>';
+   }
 }
 
 function scrollClick(event) {
-    event.preventDefault()
-    const element = event.target;
-    const id = element.getAttribute('href');
-    const to = document.querySelector(id).offsetTop;
+   event.preventDefault()
+   const element = event.target;
+   const id = element.getAttribute('href');
+   const to = document.querySelector(id).offsetTop;
 
-    window.scroll({
-        top: to - 65,
-        behavior: 'smooth'
-    })
+   window.scroll({
+      top: to - 65,
+      behavior: 'smooth'
+   })
 }
 
-// Animation scrool page itens
-
-const root = document.documentElement;
-root.className += "js";
-function animeScroll() {
-
-    const target = document.querySelectorAll(".anime");
-    target.forEach((element) => {
-        let contentPosition = element.getBoundingClientRect().top;
-        let screenPosition = window.innerHeight * 0.65;
-        if (contentPosition < screenPosition) {
-            element.classList.add("animate");
-
-        } else {
-            element.classList.remove("animate");
-
-        }
-    });
-}
-
-animeScroll();
-
-window.addEventListener("scroll", function () {
-    animeScroll();
-
-});
 
 
-// VARIAVEIS
 
-
-// EVENTOS
-
-
-// FUNÇÕES
 
 
