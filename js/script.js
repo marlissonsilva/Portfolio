@@ -8,23 +8,24 @@ const root = document.documentElement;
 root.className += 'js'
 
 // EVENTS ######################
-menuHamburguer.addEventListener('click', toggleMneu)
-window.addEventListener('scroll', toggleNavBg)
-window.addEventListener('scroll', animeScroll)
+menuHamburguer.addEventListener('click', toggleMneu);
+window.addEventListener('scroll', toggleNavBg);
+window.addEventListener('scroll', animeScroll);
+
 menuItems.forEach(element => {
    element.addEventListener('click', hideMenu)
    element.addEventListener('click', scrollClick)
 });
-
-
 
 // FUNCTIONS ###################
 function toggleMneu() {
    nav.classList.toggle('active')
    if (nav.classList.contains('active')) {
       menuHamburguer.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+      document.body.style.overflow = 'hidden'
    } else {
       menuHamburguer.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      document.body.style.overflow = 'auto'
    }
 }
 
@@ -41,7 +42,6 @@ function toggleNavBg() {
    }
 }
 
-// animeScroll()
 function animeScroll() {
    target.forEach((element) => {
       let contentPosition = element.getBoundingClientRect().top;
@@ -58,6 +58,7 @@ function hideMenu(event) {
    if (event.type === 'click') {
       nav.classList.remove('active')
       menuHamburguer.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      document.body.style.overflow = 'auto'
    }
 }
 

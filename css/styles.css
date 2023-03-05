@@ -38,6 +38,11 @@
     padding: 0.3rem;
   }
 
+  #menu a:hover {
+    color: var(--buttons);
+    transition: 0.5s linear;
+  }
+
   /* BANNER */
   #banner .container {
     top: 50%;
@@ -93,13 +98,17 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .container{
+    max-width: 1300px;
+    margin: auto;
+  }
   .card {
     border: 1px solid var(--buttons);
     width: 400px;
     margin: auto;
   }
 
-  #modal{
+  #modal {
     width: 1000px;
   }
   .modal-body {
