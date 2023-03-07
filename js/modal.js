@@ -108,7 +108,6 @@ cardsIndex.forEach(card => {
         fade.classList.toggle('active')
         modal.classList.toggle('active')
         document.body.style.overflow = 'visible'
-        console.log('teste')
     })
 })
 
