@@ -122,7 +122,8 @@
   }
 
   #modal {
-    width: 1000px;
+    width: 1200px;
+    min-width: 70%;
   }
   .modal-body {
     min-height: 50vh;
@@ -132,13 +133,13 @@
   }
 
   .info-card {
-    height: 24rem;
     width: 50%;
+    min-height: 25rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: space-between;
+    overflow: auto;
   }
 
   #title {

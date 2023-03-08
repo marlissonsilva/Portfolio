@@ -1,9 +1,10 @@
 const dataModal = [
     {
+        //  PROJETO 1    
         id: 0,
         title: 'Collor Flipper',
         video: '../images/color-flipper-video.mp4',
-        desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
+        desc: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?'],
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
@@ -11,22 +12,26 @@ const dataModal = [
         projeto: 'https://marlissonsilva.github.io/Collor-Flipper/hex.html',
         repositorio: 'https://github.com/marlissonsilva/Collor-Flipper',
 
-    }, {
+    },
+    {
+        // PROJETO 2
         id: 1,
         title: 'página de captura',
         video: '../images/pagina-captura-video.mp4',
-        desc: 'Página de cadastro para receber conteúdos sobre programação, com os inputs de nome, email e com as opções de estados, foi feito a validação dos campos de input, a validação de email por meio de uma expressão regular, mostra mensagem de preenchimento incorreto e por fim abre um modal retornando a confirmação do cadastro com os dados inseridos pelo usuário. ',
+        desc: ['Página de cadastro para receber conteúdos sobre programação, com os inputs de nome, email e com as opções de estados, foi feito a validação dos campos de input, a validação de email por meio de uma expressão regular, mostra mensagem de preenchimento incorreto e por fim abre um modal retornando a confirmação do cadastro com os dados inseridos pelo usuário. '],
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
             '<i class="fa-brands fa-square-js"></i>'],
         projeto: 'https://marlissonsilva.github.io/capture-page/',
         repositorio: 'https://github.com/marlissonsilva/capture-page',
-    }, {
+    },
+    {
+        // PROJETO 3
         id: 2,
         title: 'sunnyside-agency',
         video: '../images/sunnyside-video.mp4',
-        desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
+        desc: ['    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?'],
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
@@ -36,10 +41,11 @@ const dataModal = [
     },
 
     {
+        // PROJETO 4
         id: 3,
         title: 'arte e sorriso',
         video: './images/arte-video.mp4',
-        desc: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?',
+        desc: ['    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?'],
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
@@ -48,10 +54,11 @@ const dataModal = [
         repositorio: 'https://github.com/marlissonsilva/arte-sorriso',
     },
     {
+        // PROJETO 5
         id: 4,
         title: 'escola weda',
         video: '../images/weda-video.mp4',
-        desc: 'Trata-se de um site de uma academia de lutas, onde apresenta todas as modalidades ofertadas, localização, rede social, e links para entrar em contato via WhatsApp e conta tambem com um carrossel com imagens referentes as modalidades, professores e a estrutura da academia. Esse é um site que está rodando na web, foi feito para um amigo. ',
+        desc: ['Trata-se de um site de uma academia de lutas, onde apresenta todas as modalidades ofertadas, localização, rede social, e links para entrar em contato via WhatsApp e conta tambem com um carrossel com imagens referentes as modalidades, professores e a estrutura da academia. Esse é um site que está rodando na web, foi feito para um amigo. '],
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
@@ -60,10 +67,20 @@ const dataModal = [
         repositorio: 'https://github.com/marlissonsilva',
     },
     {
+        // PROJETO 6
         id: 5,
         title: 'rest countries API',
         video: '../images/rest-countries.mp4',
-        desc: '',
+        desc: ['<p>Projeto feito como desafio do Frontend Mentor, onde foi proposto fazer o consumo da REST Countries API (API de países) onde os usuarios seriam capazes de acessar certas funcionalidaes , como: </p>',
+
+            '<li>Ver todos os países da API na página inicial</li>',
+            '<li>Pesquisar um país usando um campo de input</li>',
+            '<li>Filtrar países por região</li>',
+            '<li>Clicar em um país para ver informações mais detalhadas em uma página separada(Em desenvolvimento)</li>',
+            '<li>Clicar nos países fronteiriços na página de detalhes(Em desenvolvimento)</li>',
+            '<li>Alternar o esquema de cores entre o modo claro e escuro(Em desenvolvimento)</li>',
+            '<p>Foi feito com javascript puro, usando a fetch api</p>'],
+
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
@@ -93,6 +110,7 @@ const withoutJs = document.querySelectorAll('.without-js')
 withoutJs.forEach((element) => {
     element.style.display = 'none'
 })
+
 
 cardsIndex.forEach(card => {
     card.addEventListener('click', () => {
@@ -125,7 +143,7 @@ function showModal(index) {
     const item = dataModal[index];
     video.src = item.video;
     title.textContent = item.title;
-    desc.textContent = item.desc;
+    desc.innerHTML = item.desc.join('');
     techs.innerHTML = item.techs.join('');
     projeto.href = item.projeto;
     repositorio.href = item.repositorio;
