@@ -18,7 +18,7 @@ const dataModal = [
         id: 1,
         title: 'página de captura',
         video: '../images/pagina-captura-video.mp4',
-        desc: ['Página de cadastro para receber conteúdos sobre programação, com os inputs de nome, email e com as opções de estados, foi feito a validação dos campos de input, a validação de email por meio de uma expressão regular, mostra mensagem de preenchimento incorreto e por fim abre um modal retornando a confirmação do cadastro com os dados inseridos pelo usuário. '],
+        desc: ['Página de cadastro para receber conteúdos sobre programação, com os inputs de nome, email e com as opções de estados, foi feito a validação dos campos de input, a validação de email por meio de uma expressão regular, mostra mensagem de preenchimento incorreto e por fim abre um modal retornando a confirmação do cadastro com os dados inseridos pelo usuário.'],
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
@@ -45,7 +45,15 @@ const dataModal = [
         id: 3,
         title: 'arte e sorriso',
         video: './images/arte-video.mp4',
-        desc: ['    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias accusantium excepturi id nobis velit! Reiciendis obcaecati quos, distinctio unde enim expedita. At unde modi non cum obcaecati nulla dolorem?'],
+        desc: ['Site feito para uma clínica ondontologica (fictício), na verdade foi feito baseado em uma clinica na qual ja frequentei, é um site simples de apresentação de todas as especialidades e seus profissionais. As principais funções do site são:',
+
+            '<li>Contar um pouco sobre a clínica</li>',
+            '<li>Mostar os planos conveniados</li>',
+            '<li>Cards com as especialidades, e um modal com mais informações de cada especialidade</li>',
+            '<li>Cards com apresentando os dentistas</li>',
+            '<li>Seção de comentários dos clientes.</li>',
+            '<li>Localização</li>',
+            '<li>Links para redes sociais'],
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
@@ -58,7 +66,14 @@ const dataModal = [
         id: 4,
         title: 'escola weda',
         video: '../images/weda-video.mp4',
-        desc: ['Trata-se de um site de uma academia de lutas, onde apresenta todas as modalidades ofertadas, localização, rede social, e links para entrar em contato via WhatsApp e conta tambem com um carrossel com imagens referentes as modalidades, professores e a estrutura da academia. Esse é um site que está rodando na web, foi feito para um amigo. '],
+        desc: ['Site de uma academia de lutas, primeiro projeto que foi ao ar na web, foi feito para um amigo. possui tais funcionalidaes como: ',
+
+            '<li>Apresentar a academia</li>',
+            '<li>Mostar as modalidades disponiveis</li>',
+            '<li>Botão de contato de acordo com cada modalidade, já com uma mensagem pré-definida para o WhatsApp</li>',
+            '<li>Localização </li>',
+            '<li>Carrossel de imagens das dependencias da academia, seus alunos e professores</li>',
+            '<li>Link de direcionamento para a rede social</li>'],
         techs: [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
@@ -78,8 +93,7 @@ const dataModal = [
             '<li>Filtrar países por região</li>',
             '<li>Clicar em um país para ver informações mais detalhadas em uma página separada(Em desenvolvimento)</li>',
             '<li>Clicar nos países fronteiriços na página de detalhes(Em desenvolvimento)</li>',
-            '<li>Alternar o esquema de cores entre o modo claro e escuro(Em desenvolvimento)</li>',
-            '<p>Foi feito com javascript puro, usando a fetch api</p>'],
+            '<li>Alternar o esquema de cores entre o modo claro e escuro(Em desenvolvimento)</li>'],
 
         techs: [
             '<i class="fa-brands fa-html5"></i>',

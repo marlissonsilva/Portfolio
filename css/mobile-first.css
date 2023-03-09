@@ -411,7 +411,7 @@ main {
 }
 
 #techs {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .container-buttons {
@@ -422,7 +422,7 @@ main {
 #desc p {
   margin-bottom: 1rem;
 }
-#desc li {
+#desc li{
   list-style: disc;
 }
 
