@@ -78,7 +78,7 @@ const dataModal = [
             '<i class="fa-brands fa-html5"></i>',
             ' <i class="fa-brands fa-css3-alt"></i>',
             '<i class="fa-brands fa-square-js"></i>'],
-        projeto: 'https://demonstracao-weda.netlify.app/',
+        projeto: 'https://preview-weda.netlify.app/',
         repositorio: 'https://github.com/marlissonsilva',
     },
     {
