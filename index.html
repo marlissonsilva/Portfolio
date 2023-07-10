@@ -20,10 +20,10 @@
         <nav class="nav anime fade-in-bottom">
             <a href="./index.html" class="brand">MS</a>
             <ul class="menu">
-                <li> <a href="#anchor-header">Início</a></li>
-                <li> <a href="#anchor-about">Sobre Mim</a></li>
-                <li> <a href="#anchor-projects">Projetos</a></li>
-                <li> <a href="#anchor-techs">Tecnologias</a></li>
+                <li class="menu-item top"> <a class="item" href="#anchor-header">Início</a></li>
+                <li class="menu-item"> <a class="item" href="#anchor-about">Sobre Mim</a></li>
+                <li class="menu-item"> <a class="item" href="#anchor-projects">Projetos</a></li>
+                <li class="menu-item"> <a class="item" href="#anchor-techs">Tecnologias</a></li>
             </ul>
             <div class="social">
                 <a href="#"> <i class="fa-brands fa-github"></i></a>
@@ -44,9 +44,9 @@
                     <p>Frontend Developer</p>
                     <div class="links">
                         <a href="https://github.com/marlissonsilva" target="_blank">
-                            <i class="fa-brands fa-github"></i></a>
+                            <img src="./images/github.png" alt=""></a>
                         <a href="https://www.linkedin.com/in/marlysson-silva-8b85b821a/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i></a>
+                            <img src="./images/linkedin.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="square bottom"></div>
@@ -75,54 +75,114 @@
             <h2 class="section-title anime fade-in-top ">Projetos</h2>
             <div class="container">
                 <div class="card anime fade-in-top">
-                    <img src="./images/imc-mockup.webp" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis asperiores ex nostrum
-                        facere porro veritatis! Pariatur at cum odio neque, similique nisi et quam rem eius minima,
-                        perspiciatis qui aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-                        autem, soluta vero non hic itaque, illo ut voluptatibus beatae ipsam debitis aperiam optio at
-                        tempore impedit, architecto dignissimos sequi quod!</p>
-                    <div class="buttons">
-                        <button><a href=""> Github</a></button>
-                        <button><a href=""> Projeto</a></button>
+                    <img src="./images/imc-mockup.webp" alt="" data-index="3">
+                    <div class="wrapper-card">
+                        <h3>Titulo do Projeto</h3>
+                        <p>
+                            Site feito para uma clínica ondontologica (fictício), na verdade foi feito baseado em uma
+                            clinica na qual ja frequentei, é um site simples de apresentação de todas as especialidades
+                            e
+                            seus profissionais. As principais funções do site são:',</p>
+                        <div class="without-js">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="buttons">
+                            <button><a href=""> Github</a></button>
+                            <button><a href=""> Projeto</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card anime fade-in-top">
+                    <img src="./images/page-capute-mockup.webp" alt="" data-index="2">
+                    <div class="wrapper-card">
+                        <h3>Titulo do Projeto</h3>
+                        <p>Página de cadastro para receber conteúdos sobre programação, com os inputs de nome, email e
+                            com
+                            as opções de estados, foi feito a validação dos campos de input, a validação de email por
+                            meio
+                            de uma expressão regular, mostra mensagem de preenchimento incorreto e por fim abre um modal
+                            retornando a confirmação do cadastro com os dados inseridos pelo usuário.</p>
+                        <div class="without-js">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="buttons">
+                            <button><a href=""> Github</a></button>
+                            <button><a href=""> Projeto</a></button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card anime fade-in-top">
-                    <img src="./images/page-capute-mockup.webp" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis asperiores ex nostrum
-                        facere porro veritatis! Pariatur at cum odio neque, similique nisi et quam rem eius minima,
-                        perspiciatis qui aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-                        autem, soluta vero non hic itaque, illo ut voluptatibus beatae ipsam debitis aperiam optio at
-                        tempore impedit, architecto dignissimos sequi quod!</p>
-                    <div class="buttons">
-                        <button><a href=""> Github</a></button>
-                        <button><a href=""> Projeto</a></button>
+                    <img src="./images/sunnyside-mockup.webp" alt="" data-index="1">
+                    <div class="wrapper-card">
+                        <h3>Titulo do Projeto</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis asperiores ex nostrum
+                            facere porro veritatis! Pariatur at cum odio neque, similique nisi et quam rem eius minima,
+                            perspiciatis qui aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aspernatur
+                            autem, soluta vero non hic itaque, illo ut voluptatibus beatae ipsam debitis aperiam optio
+                            at
+                            tempore impedit, architecto dignissimos sequi quod!</p>
+                        <div class="without-js">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="buttons">
+                            <button><a href=""> Github</a></button>
+                            <button><a href=""> Projeto</a></button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card anime fade-in-top">
-                    <img src="./images/sunnyside-mockup.webp" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis asperiores ex nostrum
-                        facere porro veritatis! Pariatur at cum odio neque, similique nisi et quam rem eius minima,
-                        perspiciatis qui aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-                        autem, soluta vero non hic itaque, illo ut voluptatibus beatae ipsam debitis aperiam optio at
-                        tempore impedit, architecto dignissimos sequi quod!</p>
-                    <div class="buttons">
-                        <button><a href=""> Github</a></button>
-                        <button><a href=""> Projeto</a></button>
+                    <img src="./images/rest-api-mockup.webp" alt="" data-index="0">
+                    <div class="wrapper-card">
+                        <h3>Titulo do Projeto</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis asperiores ex nostrum
+                            facere porro veritatis! Pariatur at cum odio neque, similique nisi et quam rem eius minima,
+                            perspiciatis qui aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aspernatur
+                            autem, soluta vero non hic itaque, illo ut voluptatibus beatae ipsam debitis aperiam optio
+                            at
+                            tempore impedit, architecto dignissimos sequi quod!</p>
+                        <div class="without-js">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="buttons">
+                            <button><a href=""> Github</a></button>
+                            <button><a href=""> Projeto</a></button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card anime fade-in-top">
-                    <img src="./images/rest-api-mockup.webp" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis asperiores ex nostrum
-                        facere porro veritatis! Pariatur at cum odio neque, similique nisi et quam rem eius minima,
-                        perspiciatis qui aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-                        autem, soluta vero non hic itaque, illo ut voluptatibus beatae ipsam debitis aperiam optio at
-                        tempore impedit, architecto dignissimos sequi quod!</p>
-                    <div class="buttons">
-                        <button><a href=""> Github</a></button>
-                        <button><a href=""> Projeto</a></button>
+            </div>
+            <!-- MODAL -->
+            <div class="active fade"> </div>
+            <div class="active modal">
+                <div class="modal-content">
+                    <button class="close-button">Fechar<i class="fa-regular fa-circle-xmark"></i></button>
+                    <div class="modal-body">
+                        <div class="video-container">
+                            <img src="" id="img-person"></img>
+                        </div>
+                        <div class="info-card">
+                            <h3 id="title"></h3>
+                            <div id="desc">
+                            </div>
+                            <div id="techs"> </div>
+                            <div class="container-buttons">
+                                <a href="#" target="_blank" id="site"> <button class="btn"><i class="bi bi-link"></i>Ver
+                                        projeto</button></a>
+                                <a href="#" target="_blank" id="repositorio">
+                                    <button class="btn"><i class="bi bi-link"></i>Ver código</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,9 +218,13 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023. Todos os diretitos reservados</p>
+        <p>&copy; 2023. Todos os diretitos reservados</p> <a href="https://github.com/marlissonsilva" target="_blank">
+            <i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/marlysson-silva-8b85b821a/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i></a>
     </footer>
     <script src="./js/app.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
