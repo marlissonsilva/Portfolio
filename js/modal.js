@@ -120,6 +120,9 @@ const showModal = (index) => {
   techs.innerHTML = item.techs.join(" ");
   projeto.href = item.project;
   repositorio.href = item.repository;
+
+  image.setAttribute("alt", item.title);
+  console.log(image);
 };
 
 containerCards.children[0].insertAdjacentElement("afterend", paragraph);
