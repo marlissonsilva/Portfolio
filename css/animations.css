@@ -104,3 +104,33 @@
         transform: scale(1);
     }
 }
+
+@keyframes right-left {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes left-right {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes flutuar {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        color: rgb(10, 223, 242);
+    }
+}
