@@ -1,0 +1,144 @@
+@media screen and (min-width: 48rem) {
+    header {
+      height: 100vh;
+    }
+    nav {
+      padding: 1rem 3rem;
+      gap: 1rem;
+    }
+    nav .social {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav .social i {
+      display: flex;
+      gap: 1.5rem;
+      color: rgb(202, 198, 198);
+      font-size: 1.5rem;
+    }
+    nav .menu {
+      display: flex;
+      font-size: 1.2rem;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      visibility: visible;
+      position: relative;
+      top: 0px;
+      margin-left: 4.5rem;
+      height: 2.5rem;
+      transition: 0;
+    }
+    nav .menu a {
+      font-size: 1.2rem;
+      padding: 0.3rem;
+    }
+    nav .menu a:hover {
+      color: rgb(10, 223, 242);
+      transition: all 0.3s linear;
+      border-bottom: 1px solid rgb(10, 223, 242);
+    }
+    nav .menu-item.top {
+      margin-top: 0;
+    }
+    nav .menu-mobile {
+      display: none;
+    }
+    nav .brand {
+      font-size: 1.8rem;
+    }
+    .banner .container {
+      width: 90%;
+    }
+    .banner h1 {
+      font-size: 6.5rem;
+    }
+    .about .container {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(179, 231, 231, 0.098);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    .about .about img {
+      width: 100%;
+    }
+    .about .about-text {
+      max-width: 600px;
+      margin: auto;
+      color: rgb(202, 198, 198);
+      padding: 1rem;
+      font-size: 1.2rem;
+      text-align: left;
+    }
+    .projects .container {
+      max-width: 1300px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+    .projects .buttons {
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+    .projects img {
+      width: 100%;
+    }
+    .modal {
+      width: 1200px;
+      min-width: 70%;
+    }
+    .modal-body {
+      min-height: 50vh;
+      border-top: 1px solid gray;
+      display: flex;
+      flex-direction: row;
+    }
+    .info-card {
+      width: 50%;
+      min-height: 25rem;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+      overflow: auto;
+    }
+    .img-container {
+      height: 24rem;
+      width: 60rem;
+      margin: auto;
+    }
+    .modal .container-buttons {
+      display: flex;
+      justify-content: left;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding: 0 1rem;
+      align-items: center;
+    }
+    .techs {
+      padding: 1.5rem;
+      background-color: #140f0f;
+    }
+    .techs .container {
+      width: 100%;
+      max-width: 1300px;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+    }
+  }
+  @media screen and (min-width: 64rem) {
+    nav {
+      padding: 1rem 8rem;
+    }
+  }
