@@ -62,7 +62,7 @@ const dataModal = [
   },
 ];
 
-const image = document.querySelector(".img-person");
+const image = document.querySelector(".image");
 const title = document.querySelector(".title");
 const desc = document.querySelector(".desc");
 const techs = document.querySelector(".technologies-used");
@@ -81,12 +81,14 @@ wrappers.forEach((wrapper) => {
   wrapper.style.display = "none";
 });
 
-containerCards.children[0].insertAdjacentElement("afterend", paragraph);
+const changeOverflowBody = () => {
+  document.body.classList.toggle("hidden");
+};
 
 const openModal = (event) => {
   if (event.target.tagName === "IMG") {
     toggleModal();
-    document.body.style.overflow = "hidden";
+    changeOverflowBody();
     const index = event.target.getAttribute("data-index");
     showModal(index);
   }
@@ -106,7 +108,7 @@ const closeModal = (event) => {
   if (shouldCloseModal) {
     fade.classList.toggle("active");
     modal.classList.toggle("active");
-    document.body.style.overflow = "visible";
+    changeOverflowBody();
   }
 };
 
@@ -119,6 +121,8 @@ const showModal = (index) => {
   projeto.href = item.project;
   repositorio.href = item.repository;
 };
+
+containerCards.children[0].insertAdjacentElement("afterend", paragraph);
 
 containerCards.addEventListener("click", openModal);
 document.body.addEventListener("click", closeModal);
