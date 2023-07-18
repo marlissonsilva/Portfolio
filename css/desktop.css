@@ -13,11 +13,9 @@
     gap: 1.5rem;
   }
 
-  nav .social i {
-    display: flex;
-    gap: 1.5rem;
-    color: rgb(202, 198, 198);
-    font-size: 1.5rem;
+  nav .social img {
+    width: 30px;
+    border-radius: 50%;
   }
 
   nav .menu {

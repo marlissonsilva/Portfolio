@@ -19,7 +19,7 @@ const dataModal = [
     title: "Quiz",
     image: "../images/quiz.png",
     description: [
-      "É um quiz sobre os times de futebol brasilero, para testar seus conhecimentos sobre o nosso futebol. Onde o usuário tem 10 questões com 4 alternativas de respostas para cada. E ao fim do questionário após o envio vem a animação de scroll até o topo para visualização da pontuação, tendo uma animação a mais quando é obtido a pontuação máxima.",
+      "É um quiz sobre os times de futebol brasilero, para testar seus conhecimentos sobre o nosso futebol. Onde o usuário tem 10 questões com 4 alternativas de respostas para cada. E ao fim do questionário após o envio vem a animação de scroll até o topo para visualização da pontuação, tendo uma animação a mais quando é obtido a pontuação máxima. O uso do bootstrap foi apenas para estilização usando assim apenas as classes CSS.",
     ],
     techs: [
       '<i class="fa-brands fa-html5"></i>',

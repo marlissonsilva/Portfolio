@@ -23,6 +23,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Meu portfólio mostrando alguns dos projetos que já desenvolvi até o momento, buscando demonstrar e praticar meus conhecimentos. 
 
+<!-- Desenvolvendo buscando as boas práticas, com intuito de entregar a melhor aplicação possível.
+
+Mobile
+<img alt="projeto Habits" src="./images/mobile-diagnostico.png" width="100%">
+
+Desktop
+<img alt="projeto Habits" src="./images/desktop-diagnostico.png" width="100%"> -->
+
 <!-- - Eventos de formulário (envio do form),
 - Obtenção de dados do usuário (respostas por meio do input radio),
 - Validações de inputs, onde pelo menos uma das alternativas tem que está marcada.
