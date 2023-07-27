@@ -1,6 +1,22 @@
 const dataModal = [
   {
-    id: 0,
+    // id: 0,
+    title: "city weather",
+    image: "../images/city-weather-mockup.webp",
+    description: [
+      "Aplicação de consumo da AccuWeather API, trazendo informações do clima da cidade inserida no input, e com a previsão de 5 dias mostrando a temperatura mínima e máxima de cada dia e ícone indicando a condição climática.",
+    ],
+    techs: [
+      '<i class="fa-brands fa-html5"></i>',
+      '<i class="fa-brands fa-css3-alt"></i>',
+      '<i class="fa-brands fa-square-js"></i>',
+
+    ],
+    project: "https://marlissonsilva.github.io/city-weather/",
+    repository: "https://github.com/marlissonsilva/city-weather",
+  },
+  {
+    // id: 0,
     title: "página de captura",
     image: "../images/page-capute-mockup.webp",
     description: [
@@ -15,7 +31,7 @@ const dataModal = [
     repository: "https://github.com/marlissonsilva/capture-page",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Quiz",
     image: "../images/quiz.png",
     description: [
@@ -31,7 +47,7 @@ const dataModal = [
   },
 
   {
-    id: 2,
+    // id: 2,
     title: "Consumindo API do GIFHY",
     image: "../images/gifhy.png",
     description: [
@@ -46,7 +62,7 @@ const dataModal = [
     repository: "https://github.com/marlissonsilva/fetch-gif-in-gifhy-api",
   },
   {
-    id: 3,
+    // id: 3,
     title: "arte & sorriso",
     image: "../images/mockup-arte1.webp",
     description: [
@@ -122,7 +138,6 @@ const showModal = (index) => {
   repositorio.href = item.repository;
 
   image.setAttribute("alt", item.title);
-  console.log(image);
 };
 
 containerCards.children[0].insertAdjacentElement("afterend", paragraph);
