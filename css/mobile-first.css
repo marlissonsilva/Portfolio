@@ -35,7 +35,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 90vh;
-    max-height: 800px;
+    max-height: 900px;
     background-color: var(--bg-main);
 }
 
@@ -259,7 +259,7 @@ nav .brand {
     padding-bottom: 3rem;
 }
 
-.projects .paragraphAuxiliar {
+.projects .auxiliary-paragraph {
     text-align: center;
 }
 
@@ -277,7 +277,7 @@ nav .brand {
 
 .projects .card {
     background-color: #171818;
-    padding: 0.5rem;
+    padding: 2rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -298,10 +298,10 @@ nav .brand {
     line-height: 1.5rem;
 }
 
-.projects .without-js {
+.projects .techs-used {
     padding: 1rem 0.5rem;
     color: var(--color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 0.3rem;
 }
 
@@ -315,138 +315,22 @@ nav .brand {
     padding: 0.5rem 2rem;
     font-size: 1.1rem;
     color: #e3e7e7;
-}
-
-.projects button {
-    padding: 0.5rem 0;
     background-color: #0990bd;
-    border: none;
     border-radius: 0.3rem;
 }
 
-.projects button:hover {
+.projects button {
+    border: none;
+}
+
+.projects .buttons a:hover {
     background-color: var(--bg-main);
     transition: all 0.3s;
 }
 
-/* ######## MODAL ##### */
-.fade {
-    min-height: 100vh;
-    width: 100vw;
-    -webkit-backdrop-filter: blur(60px);
-    backdrop-filter: blur(60px);
-    z-index: 5;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.modal {
-    background-color: #0b0a0a;
-    width: 90%;
-    max-width: 1000px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 1rem;
-    padding: 1.2rem;
-    z-index: 6;
-}
-
-.fade,
-.modal {
-    opacity: 1;
-    transition: 0.5s linear;
-    pointer-events: all;
-}
-
-.modal.active {
-    top: 0;
-}
-
-.fade.active,
-.modal.active {
-    opacity: 0;
+.projects .card a.code-private{
+    background-color: #2d2e2e;
     pointer-events: none;
-}
-
-.modal-content {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: end;
-}
-
-.modal-content .close-button {
-    align-self: flex-end;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: rgba(249, 96, 96, 0.187);
-    color: var(--color);
-    transition: 0.5s ease-out;
-    text-align: center;
-}
-
-.modal-content .close-button i {
-    margin-left: 0.5rem;
-}
-
-.modal-body {
-    border-top: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.modal-body .info-card {
-    max-height: 24rem;
-    min-height: 15rem;
-    width: 100%;
-    overflow-y: auto;
-    padding: 0rem 0;
-}
-
-.modal-body .title {
-    font-size: 1.9rem;
-    text-transform: capitalize;
-    margin-bottom: 0.5rem;
-    color: var(--color);
-}
-
-.modal-body .technologies-used {
-    color: var(--color);
-    padding: 0.8rem 1rem;
-    font-size: 1.6rem;
-}
-
-.modal-body .desc {
-    color: var(--color);
-    padding: 0 1rem;
-    font-size: 1.1rem;
-}
-
-.container-buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
-.container-buttons button {
-    padding: 0.5rem 2rem;
-    font-size: 1.1rem;
-}
-
-.container-buttons button:hover {
-    color: var(--color);
-}
-
-.hidden {
-    overflow: hidden;
 }
 
 .techs {

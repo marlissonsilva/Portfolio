@@ -63,44 +63,22 @@
     font-size: 6.5rem;
   }
 
-  .about .container {
-    max-width: 900px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(179, 231, 231, 0.098);
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .about .about img {
-    width: 100%;
-  }
-
-  .about .about-text {
-    max-width: 600px;
-    margin: auto;
-    color: rgb(202, 198, 198);
-    padding: 1rem;
-    font-size: 1.2rem;
-    text-align: left;
-  }
-
-  .about .about-text .social {
-    display: flex;
-    font-size: 2rem;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
   .projects .container {
     max-width: 1300px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-top: 1rem;
     gap: 1rem;
+  }
+  .projects .card {
+    background-color: #171818;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 1rem;
+    z-index: 2;
   }
 
   .projects .buttons {
@@ -109,44 +87,28 @@
   }
 
   .projects img {
-    width: 100%;
-  }
-
-  .modal {
-    width: 1200px;
-    min-width: 70%;
-  }
-
-  .modal-body {
-    min-height: 50vh;
-    border-top: 1px solid gray;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .info-card {
     width: 50%;
-    min-height: 25rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    overflow: auto;
+    object-fit: contain;
   }
 
-  .img-container {
-    height: 24rem;
-    width: 60rem;
-    margin: auto;
+  .projects .card.reverse {
+    flex-direction: row-reverse;
   }
 
-  .modal .container-buttons {
-    display: flex;
-    justify-content: left;
+  .projects .card.reverse .buttons {
+    justify-content: flex-start;
     gap: 1rem;
-    margin-top: 2rem;
-    padding: 0 1rem;
-    align-items: center;
+  }
+
+  .projects .techs-used {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .projects .card.reverse .techs-used {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .techs {
