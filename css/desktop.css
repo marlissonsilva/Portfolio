@@ -76,7 +76,7 @@
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 1rem;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .projects .card {
