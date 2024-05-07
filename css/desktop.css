@@ -55,6 +55,9 @@
     font-size: 1.8rem;
   }
 
+  .banner{
+    padding-top: 6rem;
+  }
   .banner .container {
     width: 90%;
   }
@@ -111,7 +114,7 @@
     justify-content: flex-start;
   }
 
-  .techs {
+  /* .techs {
     padding: 1.5rem;
     background-color: #140f0f;
   }
@@ -128,7 +131,7 @@
     padding-bottom: 2rem;
     min-height: 30vh;
     max-height: 500px;
-  }
+  } */
 }
 @media screen and (min-width: 64rem) {
   nav {
