@@ -34,8 +34,7 @@ img {
 header {
   display: flex;
   flex-direction: column;
-  height: 90vh;
-  max-height: 900px;
+  height: auto;
   background-color: var(--bg-main);
 }
 
@@ -136,10 +135,8 @@ nav .brand {
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 90vh;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .banner .container {
@@ -151,18 +148,23 @@ nav .brand {
   position: relative;
   overflow: hidden;
   animation: fade-text 3s;
-  border-radius: 0.3rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.banner .image {
+  max-width: 30rem;
+  object-fit: contain;
 }
 
 .banner .presentation {
   display: flex;
   flex-direction: column;
+  aling-items: center;
+  justify-content: center;
   gap: 1rem;
   max-width: 700px;
-}
-
-.banner .presentation span {
-  /* margin-left:50%; */
+  margin: auto;
 }
 
 .banner h2 {
@@ -174,6 +176,7 @@ nav .brand {
   line-height: 2.6rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  width: 90%;
   max-width: 500px;
 }
 
@@ -186,7 +189,8 @@ nav .brand {
   align-items: center;
   gap: 2rem;
   overflow: hidden;
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   border-right: 0.5px solid #cac1;
   border-left: 0.5px solid #cac1;
   padding: 1rem;
@@ -197,20 +201,18 @@ nav .brand {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.2rem;
   animation: marquee 15s infinite linear;
 }
 
 .banner .techs img {
-  width: 80px;
-  height: 80px;
-}
-.banner .tech {
+  width: 50px;
+  height: 50px;
 }
 
 .banner .wrapper {
   display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+  flex-direction: column;
 }
 
 .banner .links {
@@ -234,7 +236,6 @@ nav .brand {
 
 .banner .links img {
   width: 40px;
-  /* background-color: white; */
   border-radius: 50%;
   line-height: 100%;
   object-fit: contain;
@@ -314,34 +315,13 @@ nav .brand {
   transition: all 0.3s;
 }
 
+.btn-link .fa-solid {
+  margin-right: 0.2rem;
+}
+
 .projects .card a.code-private {
   background-color: #2d2e2e;
   pointer-events: none;
-}
-
-.techs .container div {
-  height: 150px;
-  width: 150px;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(39, 39, 39);
-  border-radius: 0.5rem;
-}
-
-.techs .container div:hover {
-  border: 1px solid #0ca7c2;
-  transition: all 0.3s linear;
-}
-.techs .container img {
-  width: 100%;
-  height: 100px;
-}
-
-.techs .container .name-tech {
-  font-size: 1.2rem;
 }
 
 footer {
@@ -384,12 +364,17 @@ footer img {
 }
 
 @media screen and (max-width: 28.25rem) {
-  .banner {
-    height: 100vh;
+  .banner h2 {
+    font-size: 1.5rem;
+    color: rgb(10, 223, 242);
+  }
+
+  .banner p {
+    font-size: 1.3rem;
   }
 
   .banner h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .banner .wrapper {
@@ -411,5 +396,10 @@ footer img {
     display: flex;
     gap: 1rem;
     padding: 0;
+  }
+
+  .btn-link span,
+  .code-private span {
+    display: none;
   }
 }
