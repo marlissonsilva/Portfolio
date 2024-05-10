@@ -1,430 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta
-      name="description"
-      content="Meu nome é Marlisson , sou desenvolvedor frontend, estudante de análise e desenvolvimento de sistemas."
-    />
-    <meta
-      name="keywords"
-      content="html, css, javascript, marlisson silva, portfólio, frontend, marlisson, desenvolvimento, desenvolvedor, developer, sites, website, desenvolvimento web "
-    />
-    <meta name="author" content="Marlisson Silva" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+<head>
+  <meta name="description"
+    content="Meu nome é Marlisson , sou desenvolvedor frontend, estudante de análise e desenvolvimento de sistemas.">
+  <meta name="keywords"
+    content="html, css, javascript, marlisson silva, portfólio, frontend, marlisson, desenvolvimento, desenvolvedor, developer, sites, website, desenvolvimento web ">
+  <meta name="author" content="Marlisson Silva">
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marlisson Silva</title>
 
-    <script
-      src="https://kit.fontawesome.com/58e666dbc4.js"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap">
 
-    <link rel="stylesheet" href="./css/mobile-first.css" />
-    <link rel="stylesheet" href="./css/desktop.css" />
-    <link rel="stylesheet" href="./css/animations.css" />
-  </head>
+  <script src="https://kit.fontawesome.com/58e666dbc4.js" crossorigin="anonymous"></script>
 
-  <body>
-    <header id="anchor-header">
-      <nav class="nav anime fade-in-bottom">
-        <span class="brand">MS</span>
-        <ul class="menu">
-          <li class="menu-item top">
-            <a class="item" href="#anchor-header">Início</a>
-          </li>
-          <li class="menu-item">
-            <a class="item" href="#anchor-projects">Projetos</a>
-          </li>
-        </ul>
-        <div class="social">
-          <a href="https://github.com/marlissonsilva" target="_blank">
-            <img src="./images/svgs/github.svg" alt="Icone do github"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/marlisson-silva-b6a187302/"
-            target="_blank"
-          >
-            <img src="./images/svgs/linkedin.svg" alt="Icone do linkedin"
-          /></a>
+  <link rel="stylesheet" href="./css/mobile-first.css">
+  <link rel="stylesheet" href="./css/desktop.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+
+<body>
+  <header id="anchor-header">
+    <nav class="nav anime fade-in-bottom">
+      <span class="brand">MS</span>
+      <ul class="menu">
+        <li class="menu-item top">
+          <a class="item" href="#anchor-header">Início</a>
+        </li>
+        <li class="menu-item">
+          <a class="item" href="#anchor-projects">Projetos</a>
+        </li>
+      </ul>
+      <div class="social">
+        <a href="https://github.com/marlissonsilva" target="_blank">
+          <img src="./images/svgs/github.svg" alt="Icone do github" /></a>
+        <a href="https://www.linkedin.com/in/marlisson-silva-b6a187302/" target="_blank">
+          <img src="./images/svgs/linkedin.svg" alt="Icone do linkedin" /></a>
+      </div>
+      <div class="menu-mobile">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </nav>
+  </header>
+  <section class="banner">
+    <div class="container">
+      <div class="wrapper">
+        <div class="presentation">
+          <h1>Marlisson <span>Silva</span></h1>
+          <h2 class="">Desenvolvedor Web</h2>
+          <p class="description">
+            Desenvolvendo sonhos e criando soluções digitais. Em busca de
+            desafios para transformar ideias em realidade.
+          </p>
         </div>
-        <div class="menu-mobile">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
+        <div class="techs">
+          <div>
+            <img src="./images/svgs/react.svg" alt="" />
+            <span class="tech">react</span>
+          </div>
+          <div>
+            <img src="./images/svgs/square-js.svg" alt="" />
+            <span class="tech">javascript</span>
+          </div>
+          <div>
+            <img src="./images/svgs/node.svg" alt="" />
+            <span class="tech">node</span>
+          </div>
+          <div>
+            <img src="./images/svgs/html5.svg" alt="" />
+            <span class="tech">html</span>
+          </div>
+          <div>
+            <img src="./images/svgs/css3-alt.svg" alt="" />
+            <span class="tech">css</span>
+          </div>
+          <div>
+            <img src="./images/svgs/sass.svg" alt="" />
+            <span class="tech">sass</span>
+          </div>
+          <div>
+            <img src="./images/svgs/git-alt.svg" alt="" />
+            <span class="tech">git</span>
+          </div>
+          <div>
+            <img src="./images/svgs/github-tech.svg" alt="" />
+            <span class="tech">github</span>
+          </div>
         </div>
-      </nav>
-      <section class="banner">
-        <div class="container">
-          <div class="wrapper">
-            <div class="presentation">
-              <h1>Marlisson <span>Silva</span></h1>
-              <h2 class="">Desenvolvedor Web</h2>
-              <p class="description">
-                Desenvolvendo sonhos e criando soluções digitais. Em busca de
-                desafios para transformar ideias em realidade.
-              </p>
+      </div>
+      <div class="image"></div>
+    </div>
+    <a class="arrow-down" href="#anchor-projects">
+    </a>
+  </section>
+  <main>
+    <section class="projects" id="anchor-projects">
+      <h2 class="section-title anime fade-in-top">PROJETOS</h2>
+      <div class="container">
+        <div class="card anime fade-in-top">
+          <img src="./images/fazerobem.png" alt="Escola Weda - Academia de lutas" />
+          <div class="wrapper-card">
+            <h3>Fazer o bem a quem não tem</h3>
+            <p>
+              O projeto é a criação de um site para uma ONG, desde o
+              planejamento até a entrega final, visando aumentar a
+              visibilidade da organização, compartilhar sua missão e engajar a
+              comunidade em suas causas, resultado de trabalho voluntário.
+            </p>
+            <div class="techs-used">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
             </div>
-            <div class="techs">
-              <div>
-                <img src="./images/svgs/react.svg" alt="" />
-                <span class="tech">react</span>
-              </div>
-              <div>
-                <img src="./images/svgs/square-js.svg" alt="" />
-                <span class="tech">javascript</span>
-              </div>
-              <div>
-                <img src="./images/svgs/node.svg" alt="" />
-                <span class="tech">node</span>
-              </div>
-              <div>
-                <img src="./images/svgs/html5.svg" alt="" />
-                <span class="tech">html</span>
-              </div>
-              <div>
-                <img src="./images/svgs/css3-alt.svg" alt="" />
-                <span class="tech">css</span>
-              </div>
-              <div>
-                <img src="./images/svgs/sass.svg" alt="" />
-                <span class="tech">sass</span>
-              </div>
-              <div>
-                <img src="./images/svgs/git-alt.svg" alt="" />
-                <span class="tech">git</span>
-              </div>
-              <div>
-                <img src="./images/svgs/github-tech.svg" alt="" />
-                <span class="tech">github</span>
-              </div>
-            </div>
-          </div>
-          <img class="image" src="./images/programmer-p.webp" alt="" />
-        </div>
-      </section>
-    </header>
-    <main>
-      <section class="projects" id="anchor-projects">
-        <h2 class="section-title anime fade-in-top">PROJETOS</h2>
-        <div class="container">
-          <div class="card anime fade-in-top">
-            <img
-              src="./images/fazerobem.png"
-              alt="Escola Weda - Academia de lutas"
-            />
-            <div class="wrapper-card">
-              <h3>Fazer o bem a quem não tem</h3>
-              <p>
-                Este projeto representa a concepção, planejamento e
-                implementação de um website para uma Organização Não
-                Governamental (ONG), desde a fase inicial até a entrega final,
-                resultado de um trabalho voluntário. O objetivo primordial foi
-                criar uma plataforma online que permitisse à ONG aumentar sua
-                visibilidade, compartilhar sua missão e engajar a comunidade em
-                suas causas.
-              </p>
-              <div class="techs-used">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="buttons">
-                <button>
-                  <a
-                    href="https://github.com/marlissonsilva/"
-                    target="_blank"
-                    class="btn-link code-private"
-                  >
-                    <i class="fa-solid fa-code"></i><span> Privado</span></a
-                  >
-                </button>
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://fazerobemaquemnaotem.com.br"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-link"></i>
-                    <span> Ver site</span>
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card anime fade-in-top reverse">
-            <img
-              src="./images/escola-weda.png"
-              alt="Escola Weda - Academia de lutas"
-            />
-            <div class="wrapper-card">
-              <h3>Escola Weda</h3>
-              <p>
-                Este projeto consiste na criação e desenvolvimento de um site
-                para uma academia de lutas, utilizando tecnologias como HTML,
-                JavaScript e Bootstrap. O objetivo principal é fornecer aos
-                usuários uma plataforma intuitiva e responsiva que apresente
-                informações relevantes sobre a academia, suas modalidades,
-                localização e formas de contato.
-              </p>
-              <div class="techs-used">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="buttons">
-                <button>
-                  <a
-                    href="https://github.com/marlissonsilva/"
-                    target="_blank"
-                    class="btn-link code-private"
-                  >
-                    <i class="fa-solid fa-code"></i><span> Privado</span></a
-                  >
-                </button>
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://escolaweda.com.br/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-link"></i>
-                    <span> Ver site</span>
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card anime fade-in-top">
-            <img
-              src="./images/city-weather-mockup.webp"
-              alt="Página de captura"
-            />
-            <div class="wrapper-card">
-              <h3>City Weather</h3>
-              <p>
-                Aplicação de consumo da AccuWeather API, trazendo informações do
-                clima da cidade inserida no input, e com a previsão de 5 dias
-                mostrando a temperatura mínima e máxima de cada dia e ícone
-                indicando a condição climática.
-              </p>
-              <div class="techs-used">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="buttons">
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://github.com/marlissonsilva/city-weather"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-code"></i>
-                    <span> Ver código</span></a
-                  >
-                </button>
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://marlissonsilva.github.io/city-weather/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-link"></i>
-                    <span> Ver site</span>
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card anime fade-in-top reverse">
-            <img
-              src="./images/page-capute-mockup.webp"
-              alt="Página de captura"
-            />
-            <div class="wrapper-card">
-              <h3>Página de captura</h3>
-              <p>
-                Página de cadastro para receber conteúdos sobre programação, com
-                os inputs de nome, email e com as opções de estados, foi feito a
-                validação dos campos de input, a validação de email por meio de
-                uma expressão regular, mostra mensagem de preenchimento
-                incorreto e por fim abre um modal retornando a confirmação do
-                cadastro com os dados inseridos pelo usuário.
-              </p>
-              <div class="techs-used">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="buttons">
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://github.com/marlissonsilva/capture-page"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-code"></i>
-                    <span>Ver código</span></a
-                  >
-                </button>
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://marlissonsilva.github.io/capture-page/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-link"></i>
-                    <span> Ver site</span>
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card anime fade-in-top">
-            <img src="./images/quiz.png" alt="Quiz do Brasileirão" />
-            <div class="wrapper-card">
-              <h3>Quiz do Brasileirão</h3>
-              <p>
-                É um quiz sobre os times de futebol brasilero, para testar seus
-                conhecimentos sobre o nosso futebol. Onde o usuário tem 10
-                questões com 4 alternativas de respostas para cada. E ao fim do
-                questionário após o envio vem a animação de scroll até o topo
-                para visualização da pontuação, tendo uma animação a mais quando
-                é obtido a pontuação máxima.
-              </p>
-              <div class="techs-used">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="buttons">
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://github.com/marlissonsilva/Quiz"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-code"></i>
-                    <span> Ver código </span>
-                  </a>
-                </button>
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://marlissonsilva.github.io/Quiz/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-link"></i>
-                    <span> Ver site</span>
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
+            <div class="buttons">
+              <a href="https://github.com/marlissonsilva/" target="_blank" class="btn-link code-private">
+                <i class="fa-solid fa-code"></i><span>Código</span>
+              </a>
 
-          <div class="card anime fade-in-top reverse">
-            <img src="./images/gifhy.png" alt="Consumo de Api do GIFHY" />
-            <div class="wrapper-card">
-              <h3>Consumo de Api do GIFHY</h3>
-              <p>
-                Aplicação feita como desafio do curso de javascript, onde é
-                feito o consumo da API GIFHY, retornando um GIF corespondente ao
-                termo digitado no input
-              </p>
-              <div class="techs-used">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="buttons">
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://github.com/marlissonsilva/fetch-gif-in-gifhy-api"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-code"></i>
-                    <span> Ver código</span></a
-                  >
-                </button>
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://fetchgiphy.netlify.app/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-link"></i>
-                    <span> Ver site</span>
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card anime fade-in-top">
-            <img src="./images/mockup-arte1.webp" alt="Clinica Arte&Sorriso" />
-            <div class="wrapper-card">
-              <h3>Arte&Sorriso</h3>
-              <p>
-                Site feito para uma clínica ondontologica (fictício), na verdade
-                foi feito baseado em uma clinica na qual ja frequentei, é um
-                site simples de apresentação de todas as especialidades e seus
-                profissionais. As principais funções do site são:,Contar um
-                pouco sobre a clínica,Mostar os planos conveniados,Cards com as
-                especialidades, e um modal com mais informações de cada
-                especialidade,Cards com apresentando os dentistas,Seção de
-                comentários dos clientes.,Localização,Links para redes sociais
-              </p>
-              <div class="techs-used">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="buttons">
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://github.com/marlissonsilva/arte-sorriso"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-code"></i>
-                    <span> Ver código</span>
-                  </a>
-                </button>
-                <button>
-                  <a
-                    class="btn-link"
-                    href="https://marlissonsilva.github.io/arte-sorriso/"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-link"></i>
-                    <span> Ver site</span>
-                  </a>
-                </button>
-              </div>
+              <a class="btn-link" href="https://fazerobemaquemnaotem.com.br" target="_blank">
+                <i class="fa-solid fa-link"></i><span>Site</span>
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023. Todos os diretitos reservados</p>
+        <div class="card anime fade-in-top reverse">
+          <img src="./images/escola-weda.png" alt="Escola Weda - Academia de lutas" />
+          <div class="wrapper-card">
+            <h3>Escola Weda</h3>
+            <p>
+              O projeto consiste na criação de um site responsivo para uma
+              academia de lutas, usando HTML, JavaScript e Bootstrap para
+              apresentar informações sobre modalidades, localização e contatos
+              da academia.
+            </p>
+            <div class="techs-used">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+            <div class="buttons">
+              <a href="https://github.com/marlissonsilva/" target="_blank" class="btn-link code-private">
+                <i class="fa-solid fa-code"></i>
+                <span> Código</span>
+              </a>
+              <a class="btn-link" href="https://escolaweda.com.br/" target="_blank">
+                <i class="fa-solid fa-link"></i>
+                <span> Ver site</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card anime fade-in-top">
+          <img src="./images/city-weather-mockup.webp" alt="Página de captura" />
+          <div class="wrapper-card">
+            <h3>City Weather</h3>
+            <p>
+              Uma aplicação que usa a API da AccuWeather para mostrar o clima
+              atual e a previsão de 5 dias para uma cidade inserida, exibindo
+              temperaturas mínimas e máximas diárias, além de ícones para as
+              condições climáticas.
+            </p>
+            <div class="techs-used">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+            <div class="buttons">
+              <a class="btn-link" href="https://github.com/marlissonsilva/city-weather" target="_blank">
+                <i class="fa-solid fa-code"></i>
+                <span> Código</span></a>
+              <a class="btn-link" href="https://marlissonsilva.github.io/city-weather/" target="_blank">
+                <i class="fa-solid fa-link"></i>
+                <span> Ver site</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card anime fade-in-top reverse">
+          <img src="./images/page-capute-mockup.webp" alt="Página de captura" />
+          <div class="wrapper-card">
+            <h3>Página de captura</h3>
+            <p>
+              A página de cadastro para conteúdos sobre programação inclui
+              campos para nome, email e estado, com validação dos campos e do
+              email usando uma expressão regular. Após a validação, exibe
+              mensagens de erro e um modal confirma o cadastro com os dados
+              inseridos pelo usuário.
+            </p>
+            <div class="techs-used">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+            <div class="buttons">
+              <a class="btn-link" href="https://github.com/marlissonsilva/capture-page" target="_blank">
+                <i class="fa-solid fa-code"></i>
+                <span>Código</span></a>
+              <a class="btn-link" href="https://marlissonsilva.github.io/capture-page/" target="_blank">
+                <i class="fa-solid fa-link"></i>
+                <span> Ver site</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023. Todos os diretitos reservados</p>
+    <div class="social">
       <a href="https://github.com/marlissonsilva" target="_blank">
-        <img src="./images/svgs/github.svg" alt="Icone do github"
-      /></a>
-      <a
-        href="https://www.linkedin.com/in/marlisson-silva-b6a187302/"
-        target="_blank"
-      >
-        <img src="./images/svgs/linkedin.svg" alt="Icone do linkedin"
-      /></a>
-    </footer>
-    <script src="./js/app.js"></script>
-  </body>
+        <img src="./images/svgs/github.svg" alt="Icone do github" /></a>
+      <a href="https://www.linkedin.com/in/marlisson-silva-b6a187302/" target="_blank">
+        <img src="./images/svgs/linkedin.svg" alt="Icone do linkedin" /></a>
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
 </html>
