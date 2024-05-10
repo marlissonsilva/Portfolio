@@ -16,6 +16,10 @@
     --button: #ff6e6c; */
 }
 
+body {
+  background-color: var(--bg-main);
+}
+
 .section-title {
   text-align: center;
   color: var(--color);
@@ -32,14 +36,26 @@ img {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
   background-color: var(--bg-main);
+  border-bottom: 1px solid #fff2;
 }
 
 .fa-brands:hover {
   color: rgb(10, 223, 242);
+  transition: all 0.3s;
+}
+
+.social img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.social img:hover {
+  background-color: #0990bd;
+  transform: scale(1.2);
   transition: all 0.3s;
 }
 
@@ -49,11 +65,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  background-color: var(--bg-main);
-  width: 100%;
-  z-index: 3;
-  border-bottom: 1px solid #fff2;
 }
 
 nav .social {
@@ -136,7 +147,9 @@ nav .brand {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 6rem;
+  max-height: 74rem;
 }
 
 .banner .container {
@@ -160,7 +173,6 @@ nav .brand {
 .banner .presentation {
   display: flex;
   flex-direction: column;
-  aling-items: center;
   justify-content: center;
   gap: 1rem;
   max-width: 700px;
@@ -189,7 +201,7 @@ nav .brand {
   align-items: center;
   gap: 2rem;
   overflow: hidden;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   border-right: 0.5px solid #cac1;
   border-left: 0.5px solid #cac1;
@@ -202,7 +214,7 @@ nav .brand {
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
-  animation: marquee 15s infinite linear;
+  animation: slideTechs 15s infinite linear;
 }
 
 .banner .techs img {
@@ -241,25 +253,31 @@ nav .brand {
   object-fit: contain;
 }
 
+.arrow-down {
+ margin-top: 2rem;
+  width: 0px;
+  height: 0px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 20px solid var(--squares); 
+  animation: flutuar 1s ease infinite;
+}
+
 .projects {
   background-color: #27272a;
   padding-bottom: 3rem;
 }
 
-.projects .auxiliary-paragraph {
-  text-align: center;
-}
-
 .projects .container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.4rem;
   gap: 2rem;
 }
 
 .projects img {
   width: 100%;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .projects .card {
@@ -268,7 +286,7 @@ nav .brand {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   z-index: 2;
 }
 
@@ -296,21 +314,32 @@ nav .brand {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0.5rem;
+  gap: 2rem;
 }
 
 .projects .buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.5rem 2rem;
   font-size: 1.1rem;
   color: #e3e7e7;
-  background-color: #0990bd;
   border-radius: 0.3rem;
+  width: 100%;
 }
 
+.projects .buttons a,
+.buttons button {
+  width: 100%;
+  border-radius: 0.3rem;
+  background-color: #0990bd;
+}
 .projects button {
   border: none;
 }
 
-.projects .buttons a:hover {
+.projects .buttons a:hover,
+.buttons button:hover {
   background-color: var(--bg-main);
   transition: all 0.3s;
 }

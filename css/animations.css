@@ -1,83 +1,26 @@
 /* ######## ANIMAÇÔES DO HEADER E BANNER######### */
-@keyframes slideImages {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(-200%);
-  }
-  75% {
+@keyframes slideTechs {
+  0% {
+    position: relative;
+    right: -100%;
     transform: translateX(0%);
   }
-}
 
-@keyframes marquee {
-    0% {
-      position: relative;
-      right: -100%;
-      transform: translateX(0%);
-    }
-    12.5% {
-      position: relative;
-      right: -75%;
-      transform: translateX(-15%);
-    }
-    25% {
-      position: relative;
-      right: -50%;
-      transform: translateX(-25%);
-    }
-    37.5% {
-      position: relative;
-      right: -25%;
-      transform: translateX(-35%);
-    }
-    50% {
-      position: relative;
-      right: 0%;
-      transform: translateX(-50%);
-    }
-    62.5% {
-      position: relative;
-      right: 25%;
-      transform: translateX(-65%);
-    }
-    75% {
-      position: relative;
-      right: 50%;
-      transform: translateX(-75%);
-    }
-    87.5% {
-      position: relative;
-      right: 75%;
-      transform: translateX(-85%);
-    }
-    100% {
-      position: relative;
-      right: 100%;
-      transform: translateX(-100%);
-    }
+  100% {
+    position: relative;
+    right: 145%;
+    transform: translateX(-100%);
   }
-
+}
 
 @keyframes fade-text {
   0% {
     opacity: 0;
-    margin-top: -20%;
+    transform: scale(0.2);
   }
-
-  50% {
-    opacity: 0.5;
-    margin-top: 15%;
-  }
-
   100% {
     opacity: 1;
-    margin-top: 0;
+    transform: scale(1);
   }
 }
 
@@ -191,11 +134,14 @@
 }
 
 @keyframes flutuar {
-  0% {
-    opacity: 0;
-  }
+  0%,
   100% {
-    opacity: 1;
-    color: rgb(10, 223, 242);
+    opacity: 0.5;
+    transform: translateY(-10px);
   }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
 }

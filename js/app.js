@@ -2,6 +2,7 @@ const menuMobile = document.querySelector(".menu-mobile");
 const nav = document.querySelector(".nav");
 const menuItens = document.querySelector(".menu");
 const target = document.querySelectorAll(".anime");
+const arrowDown = document.querySelector(".arrow-down");
 const root = document.documentElement;
 root.className += "js";
 
@@ -72,6 +73,8 @@ const menuItensClicked = (event) => {
     hiddenMenu(event);
   }
 };
+
+arrowDown.addEventListener("click", scrollClick);
 
 animeScroll();
 
