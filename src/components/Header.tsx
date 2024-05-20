@@ -12,7 +12,7 @@ export default function Header(props: HeaderProps) {
             <div className="wrapper flex justify-between p-6">
                 <Social />
                 <button className="hover" onClick={props.onClick}>
-                    {props.theme === 'light' ? <IconMoonStars size={30} stroke={1.5} /> : <IconSun size={30} stroke={1.5} />}
+                    {props.theme === 'dark' ? <IconSun size={30} stroke={1.5} /> : <IconMoonStars size={30} stroke={1.5} />}
                 </button>
             </div>
         </header>

@@ -1,13 +1,13 @@
 import {useState} from "react";
 
 export default function useToggle(valor?: boolean) {
-  const [ativo, setAtivo] = useState(valor ?? false);
+  const [active, setActive] = useState(valor ?? false);
 
-  function toggleAtivo() {
-    setAtivo(!ativo);
+  function toggleActive() {
+    setActive(!active);
   }
 
-  const r: [boolean, () => void] = [ativo, toggleAtivo];
+  const r: [boolean, () => void] = [active, toggleActive];
 
   return r;
 }

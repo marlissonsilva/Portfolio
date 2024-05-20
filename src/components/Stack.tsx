@@ -17,7 +17,7 @@ export default function Stack(props: StackProps) {
 
     return (
         <div className={`flex flex-col items-center 
-        ${visible ? "text-blue-500" : ""} `}
+        ${visible ? "text-blue-500" : ""}`}
             onMouseEnter={handleShowName}>
             {icon}
             <span className={`${visible ? "inline " : "hidden"} 

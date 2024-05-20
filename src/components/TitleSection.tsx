@@ -6,6 +6,6 @@ interface TitleSectionProps {
 export default function TitleSection(props: TitleSectionProps) {
     const { className } = props
     return (
-        <h4 className={`uppercase text-4xl p-8 ${className ?? className}`}>{props.title}</h4>
+        <h4 className={`uppercase text-4xl py-9 ${className ?? className}`}>{props.title}</h4>
     )
 }
