@@ -1,11 +1,11 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from 'react';
 
 function getWidthWindow() {
-  if (typeof window !== "undefined") {
-    const {innerWidth: width, innerHeight: height} = window;
-    return {width, height};
+  if (typeof window !== 'undefined') {
+    const { innerWidth: width, innerHeight: height } = window;
+    return { width, height };
   } else {
-    return {width: -1, height: -1};
+    return { width: -1, height: -1 };
   }
 }
 
@@ -16,9 +16,9 @@ export default function useWidthWindow() {
     function widthChange() {
       setWidthWindow(getWidthWindow());
     }
-    window.addEventListener("resize", widthChange);
+    window.addEventListener('resize', widthChange);
     return () => {
-      window.removeEventListener("resize", widthChange);
+      window.removeEventListener('resize', widthChange);
     };
   }, []);
 
